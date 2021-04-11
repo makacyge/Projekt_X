@@ -9,11 +9,7 @@
 # my_result = []
 # for f in my_list:
 #     if f > 100:
-#       my_result.append(f)
-# for f in my_result:
-#     print(my_result)
+#         my_result.append(f)
+# print(my_result)
 
-my_list = [10,65,98,101,165,198]
-if len(my_list) < 2:
-    my_list.append(0)
-    print(my_list)
+################
