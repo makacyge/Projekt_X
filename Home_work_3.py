@@ -4,14 +4,14 @@ print(new_value)
 
 #################
 
-value = 101
-new_value = value = 1 if value < 100 else value - value
+value =102
+new_value = 1 if value < 100 else 0  ### ИСПРАВЛЕНАЯ СТРОКА
 print(new_value)
 
 #################
 
-value = 4889
-new_value = value = True if value < 100 else False
+value = 102
+new_value = True if value < 100 else False   ### ИСПРАВЛЕНАЯ СТРОКА
 print(new_value)
 
 #################
