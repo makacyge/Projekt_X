@@ -13,3 +13,18 @@
 # print(my_result)
 
 ################
+
+# my_list = [198,5]
+# if len(my_list) < 2:
+#  print(my_list + [0])
+# if len(my_list) >= 2:
+#     print(my_list + [sum(my_list[-2:])])
+
+###############
+
+# my_string = '0123456789'
+# r =[]
+# for f_1 in my_string:
+#     for f_2 in my_string:
+#      r.append(int(f_1 + f_2))
+# print(r)
