@@ -19,7 +19,7 @@
 # v = "123456789"
 # m_s = v if len(v)< 5 else v[2:5:2]
 # print(m_s)
-
-value = 120
-new_value = value / 2 if value < 100 else - value
-print(new_value)
+#
+# value = 120
+# new_value = value / 2 if value < 100 else - value
+# print(new_value)
