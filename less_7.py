@@ -1,23 +1,33 @@
-# my_list_1 = [1, 3, 5,5]
-# my_list_2 = [20, 30, 40, 50, 10]
-# my_result = []
-# range_len = min(len(my_list_1), len(my_list_2))
-# for index in range(range_len):
-#     my_result.append(my_list_1[index])
-#     my_result.append(my_list_2[index])
-# if len(my_list_1) > len(my_list_2):
-#     tail_list = my_list_1[range_len:]
-# else:
-#     tail_list = my_list_2[range_len:]
-#     my_result += tail_list
-# print(my_result)
+# 2) Даны два словаря my_dict_1 и my_dict_2.
+# а) Создать список из ключей, которые есть в обоих словарях.
+my_dict_1 = {6:12,8:59,7:78,5:45}
+my_dict_2 = {6:89,1:12,3:15,7:77}
+result = list(set(my_dict_1.keys()).intersection(set(my_dict_2.keys())))
+print(result)
 
-# my_list = ['mumi','kia','ford','lada']
-# new_list = []
-# for f in range(my_list[::2]):
-#  print(f)
-#
-##### 1
-# my_list = [5,4,3,2,1]
-# # for index in range(len(my_list)):
-# #  print(index,my_list[index])
+# б) Создать список из ключей, которые есть в первом, но нет во втором словаре
+my_dict_1 = {6:12,8:59,7:78,5:45}
+my_dict_2 = {6:89,1:12,3:15,7:77}
+result = list(set(my_dict_1.keys()).difference(set(my_dict_2.keys())))
+print(result)
+
+# 1) Дан список словарей persons в формате [{"name": "John", "age": 15}, ... ,{"name": "Jack", "age": 45}]
+# а) Напечатать имя самого молодого человека. Если возраст совпадает - напечатать все имена.
+pers_list = [{"name": "John", "age": 15},{"name": "Jack", "age": 45},{"name": "Bob", "age": 15}]
+min_value_list = []
+for age in pers_list:
+    min_value_list.append(list(age.values())[1])
+min_value = min(min_value_list)
+for name in pers_list:
+    if list(name.values())[1] == min_value:
+     print(list(name.values())[0])
+
+# в) Посчитать среднее количество лет всех людей из списка.
+pers_list = [{"name": "John", "age": 15},{"name": "Jack", "age": 45},{"name": "Bob", "age": 15}]
+mid_value_list = []
+for age in pers_list:
+    mid_value_list.append(list(age.values())[1])
+min_value = sum(mid_value_list)
+res = sum(mid_value_list) / 3
+print(res)
+
