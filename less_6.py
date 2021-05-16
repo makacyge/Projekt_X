@@ -8,31 +8,33 @@ print(new_list)
 
 # 5. Дана строка my_str. Создать список в который поместить те символы из my_str,
 # которые встречаются в строке только один раз.
-
-my_str = set ("ffffffffbbbbdddddoooooooeeeeeeeepppmmmmm")
-n_str = []
-n_str.extend(my_str)
-print(n_str)
+###### ИСПРАВЛЕНЫЙ БЛОК КОДА
+my_str = "ffffffffbbbbdlddddoooooooeeeekeeeepppmmmvmm"
+new_str = []
+for symbol in set(my_str):
+    if my_str.count(symbol) == 1:
+        new_str.append(symbol)
+print(new_str)
 
 # 6. Даны две строки. Создать список в который поместить те символы,
 # которые есть в обеих строках хотя бы раз.
-
-my_str = ("fffbbbddddoooeeeepppm")
-my_str_1 = ("kkkssjjjkkklll")
-n_str = []
-n_str.extend(set(my_str_1))
-n_str.extend(set(my_str))
-print(n_str)
+###### ИСПРАВЛЕНЫЙ БЛОК КОДА
+my_str_1 = "ljhlj.jo;jj;df"
+my_str_2 = "kkmkjhyti"
+res = list(set(my_str_1).intersection(set(my_str_2)))
+print(res)
 
 # 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 # но в каждой только по одному разу.
-
-my_str = ("fbbbdsssdddookloeeeepppm")
-my_str_1 = ("kkkssjfejjkkkl")
-my_str_set = set(my_str)
-my_str_1_set = set(my_str_1)
-n_str = my_str_1_set.intersection_update(my_str_set)
-print(n_str)
+###### ИСПРАВЛЕНЫЙ БЛОК КОДА
+my_str_1 = "fbbbdsdddookloeeeeppwpm"
+my_str_2 = "kkksjfejjkkklw"
+res = list(set(my_str_1).intersection(set(my_str_2)))
+res_2 = []
+for symbol in res:
+    if my_str_1.count(symbol) == 1 and my_str_2.count(symbol) == 1:
+        res_2.append(symbol)
+print(res_2)
 
 # 8. Описать с помощью словаря следующую структуру для конкретного человека (можно придумать):
 
